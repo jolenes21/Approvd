@@ -5,7 +5,6 @@ import { MaybesComponent } from './maybes/maybes.component'
 import { MatchesComponent } from './matches/matches.component';
 import { MatchersComponent } from './matchers/matchers.component';
 import { MessagesComponent } from './messages/messages.component';
-import { EditComponent } from './edit/edit.component';
 
 const routes: Routes = [
   {
@@ -29,11 +28,7 @@ const routes: Routes = [
     component: MessagesComponent
   },
   {
-    path: "edit",
-    component: EditComponent
-  },
-  {
-    path: "**/*",
+    path: "",
     component: HomeComponent
   }
 ];
