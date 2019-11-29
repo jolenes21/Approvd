@@ -1,3 +1,7 @@
+# README.md
+
+This is an dating app designed in which a user's family and friends can log on and "swipe" on matches for the user.  So far, all of the components and sass have been built minus items related to the database.  Some of the database typescript files have been created, but not tested as there is no database yet.  These are currently commented out, but the front end is mostly done.
+
 # Approvd
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
