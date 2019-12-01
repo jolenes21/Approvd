@@ -12,6 +12,7 @@ import { MatchesComponent } from './matches/matches.component';
 import { MaybesComponent } from './maybes/maybes.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MatchersComponent } from './matchers/matchers.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatchersComponent } from './matchers/matchers.component';
     MatchesComponent,
     MaybesComponent,
     MessagesComponent,
-    MatchersComponent
+    MatchersComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
