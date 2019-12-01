@@ -6,6 +6,7 @@ import { MaybesComponent } from './maybes/maybes.component'
 import { MatchesComponent } from './matches/matches.component';
 import { MatchersComponent } from './matchers/matchers.component';
 import { MessagesComponent } from './messages/messages.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: "messages",
     component: MessagesComponent
+  },
+  {
+    path: "signup",
+    component: SignupComponent
   },
   {
     path: "",

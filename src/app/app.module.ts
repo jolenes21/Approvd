@@ -13,6 +13,7 @@ import { MaybesComponent } from './maybes/maybes.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MatchersComponent } from './matchers/matchers.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LoginComponent } from './login/login.component';
     MaybesComponent,
     MessagesComponent,
     MatchersComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
