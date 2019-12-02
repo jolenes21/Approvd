@@ -10,8 +10,7 @@
     <input type='password' maxlength='16' name='password'>
   </div>
   <div data-role='fieldcontain' class="center">
-    <label></label>
-    <input data-transition='slide' type='submit' value='Login'>
+    <input data-role='button' type='submit' value='Login' [routerLink]="['/home']" routerLinkActive="router-link-active">
   </div>
   <br><br>
   <div data-role='fieldcontain' class="center">
