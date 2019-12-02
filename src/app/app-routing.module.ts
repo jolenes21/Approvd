@@ -5,8 +5,10 @@ import { LoginComponent } from './login/login.component';
 import { MaybesComponent } from './maybes/maybes.component'
 import { MatchesComponent } from './matches/matches.component';
 import { MatchersComponent } from './matchers/matchers.component';
+import { MemberTypeComponent } from './member-type/member-type.component';
 import { MessagesComponent } from './messages/messages.component';
-import { SignupComponent } from './signup/signup.component';
+import { MatcheeSignupComponent } from './matchee-signup/matchee-signup.component';
+import { MatcherSignupComponent } from './matcher-signup/matcher-signup.component';
 
 const routes: Routes = [
   {
@@ -30,8 +32,16 @@ const routes: Routes = [
     component: MessagesComponent
   },
   {
-    path: "signup",
-    component: SignupComponent
+    path: "member-type",
+    component: MemberTypeComponent
+  },
+  {
+    path: "matchee-signup",
+    component: MatcheeSignupComponent
+  },
+  {
+    path: "matcher-signup",
+    component: MatcherSignupComponent
   },
   {
     path: "",
