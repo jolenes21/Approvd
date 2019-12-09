@@ -46,10 +46,14 @@ const memberSchema = new Schema({
       }
     ]
   },
+  memberBio: {
+    type: String,
+    default: "Tell us about yourself!"
+  },
   memberActive: {
     type: Boolean,
     default: true
   }
 });
 
-export const Member = model("Member", memberSchema);
+export const Members = model("Member", memberSchema);
