@@ -1,43 +1,56 @@
 <h2>Matchee Sign Up</h2>
-<div data-role='fieldcontain' class='center'>
-<label>Username</label><br>
-<input type='text' maxlength='16' name='username' value=''
-    onBlur='checkUser(this)'>
+<div data-role="fieldcontain" class="center">
+  <label>Username</label><br />
+  <input
+    type="text"
+    maxlength="16"
+    name="username"
+    value=""
+    onBlur="checkUser(this)"
+  />
 </div>
-<div data-role='fieldcontain' class='center'>
-<label>Password</label><br>
-<input type='text' maxlength='16' name='password' value=''>
+<div data-role="fieldcontain" class="center">
+  <label>Password</label><br />
+  <input type="text" maxlength="16" name="password" value="" />
 </div>
-<div data-role='fieldcontain' class='center'>
-<label>First Name</label><br>
-<input type='text' maxlength='16' name='firstName' value=''>
+<div data-role="fieldcontain" class="center">
+  <label>First Name</label><br />
+  <input type="text" maxlength="16" name="firstName" value="" />
 </div>
-<div data-role='fieldcontain' class='center'>
-<label>Last Name</label><br>
-<input type='text' maxlength='16' name='lastName' value=''>
+<div data-role="fieldcontain" class="center">
+  <label>Last Name</label><br />
+  <input type="text" maxlength="16" name="lastName" value="" />
 </div>
-<div data-role='fieldcontain' class='center'>
-<label>Birthday</label><br>
-<input type='date' name='birthday' value=''/>
+<div data-role="fieldcontain" class="center">
+  <label>Birthday</label><br />
+  <input type="date" name="birthday" value="" />
 </div>
-<div data-role='fieldcontain' class='center'>
-<label>Gender</label><br>
-<select name='gender'>
+<div data-role="fieldcontain" class="center">
+  <label>Gender</label><br />
+  <select name="gender">
     <option value="">Select</option>
     <option value="1">Male</option>
     <option value="2">Female</option>
     <option value="3">Non-binary</option>
-</select>
-<div data-role='fieldcontain'>
-<label>Gender Interested In</label><br>
-<select name='genderInterest'>
-<option value="">Select</option>
-<option value='1'>Male</option>
-<option value='2'>Female</option>
-<option value='3'>Non-binary</option>
-</select>
-<div data-role='fieldcontain'>
-<label></label><br>
-<input data-transition='slide' type='submit' name='submit' value='Sign Up' [routerLink]="['/home']" routerLinkActive="router-link-active">
-</div>
+  </select>
+  <div data-role="fieldcontain">
+    <label>Gender Interested In</label><br />
+    <select name="genderInterest">
+      <option value="">Select</option>
+      <option value="1">Male</option>
+      <option value="2">Female</option>
+      <option value="3">Non-binary</option>
+    </select>
+    <div data-role="fieldcontain">
+      <label></label><br />
+      <input
+        data-transition="slide"
+        type="submit"
+        name="submit"
+        value="Sign Up"
+        [routerLink]="['/home']"
+        routerLinkActive="router-link-active"
+      />
+    </div>
+  </div>
 </div>

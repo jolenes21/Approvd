@@ -1,11 +1,15 @@
-<div *ngIf="!canEdit" id="content" class='center'>
-    <h2 >My Profile</h2>
-    <a (click)="switch()">Edit</a><br><br>
-    <img src='./assets/images/default_user.jpg' alt="default_user.jpg" />
+<div *ngIf="!canEdit" id="content" class="center">
+  <h2>My Profile</h2>
+  <a (click)="switch()">Edit</a><br /><br />
+  <img src="./assets/images/default_user.jpg" alt="default_user.jpg" />
 </div>
-<div *ngIf="!canEdit" data-role='fieldcontain' class='center'>
-    <label>Bio</label><br>
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+<div *ngIf="!canEdit" data-role="fieldcontain" class="center">
+  <label>Bio</label><br />
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 </div>
 <app-edit *ngIf="canEdit"></app-edit>
-

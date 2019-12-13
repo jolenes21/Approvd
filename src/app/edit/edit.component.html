@@ -1,15 +1,34 @@
-<div *ngIf="canEdit" id="content" class='center'>
-    <h2>Edit Profile</h2>
-    <a (click)="switch()">Cancel</a><br><br>
-    <img src='./assets/images/default_user.jpg' alt="default_user.jpg" /><br>
-    Image:
-    <input type='file' name='memberPhoto' id='fileToUpload' value='$memberPhoto'>
-        <div data-role='fieldcontain'>
-</div><br>
-<div *ngIf="canEdit" data-role='fieldcontain' class='center'>
-    <label>Enter or edit your details and/or upload an image</label><br>
-        <textarea rows='5' cols='50' maxlength='500' name='memberBio' value='$memberBio'>memberBio</textarea><br>
-    <input data-transition='slide' type='submit' name='submit' value='Save Profile'>
-</div>
+<div *ngIf="canEdit" id="content" class="center">
+  <h2>Edit Profile</h2>
+  <a (click)="switch()">Cancel</a><br /><br />
+  <img src="./assets/images/default_user.jpg" alt="default_user.jpg" /><br />
+  Image:
+  <input
+    type="file"
+    name="memberPhoto"
+    id="fileToUpload"
+    value="$memberPhoto"
+  />
+  <div data-role="fieldcontain"></div>
+  <br />
+  <div *ngIf="canEdit" data-role="fieldcontain" class="center">
+    <label>Enter or edit your details and/or upload an image</label><br />
+    <textarea
+      rows="5"
+      cols="50"
+      maxlength="500"
+      name="memberBio"
+      value="$memberBio"
+    >
+memberBio</textarea
+    ><br />
+    <input
+      data-transition="slide"
+      type="submit"
+      name="submit"
+      value="Save Profile"
+    />
+  </div>
 
-<app-home *ngIf="!canEdit"></app-home>
+  <app-home *ngIf="!canEdit"></app-home>
+</div>
