@@ -1,4 +1,4 @@
-import { Members } from "../models/new-member-model";
+import { Members } from "../models/create-member-model";
 import { Matches } from "../models/match-model";
 
 export const getAllMembers = (req: any, res: any) => {
