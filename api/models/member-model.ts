@@ -1,59 +1,49 @@
-import { Schema, model } from "mongoose";
+export interface memberModel {
+  memberUsername: StringConstructor;
+  memberPassword: StringConstructor;
+  memberFirstName: StringConstructor;
+  memberLastName: StringConstructor;
+  memberAge: NumberConstructor;
+  memberType: memberType;
+  memberGender: memberGender;
+  memberGenderInterestedIn: memberGenderInterestedIn;
+  memberBio: StringConstructor;
+  memberActive: BooleanConstructor;
+  required: string;
+}
 
-//Member
-const memberSchema = new Schema({
-  memberUsername: {
-    type: String,
-    required: "A username is required to sign-up"
-  },
-  memberPassword: {
-    type: String,
-    required: "A password is required to sign-up"
-  },
-  memberFirstName: {
-    type: String,
-    required: "A first name is required to sign-up"
-  },
-  memberLastName: {
-    type: String,
-    required: "A last name is required to sign-up"
-  },
-  memberAge: {
-    type: Number,
-    required: "Age is required to sign-up"
-  },
-  memberType: {
-    type: [
-      {
-        type: String,
-        enum: ["matchee", "matcher"]
-      }
-    ]
-  },
-  memberGender: {
-    type: [
-      {
-        type: String,
-        enum: ["male", "female", "non-binary"]
-      }
-    ]
-  },
-  memberGenderInterestedIn: {
-    type: [
-      {
-        type: String,
-        enum: ["male", "female", "non-binary"]
-      }
-    ]
-  },
-  memberBio: {
-    type: String,
-    default: "Tell us about yourself!"
-  },
-  memberActive: {
-    type: Boolean,
-    default: true
-  }
-});
+export interface memberType {
+  type: typeMember[];
+  default: TYPE_MEMBER[];
+}
 
-export const Members = model("Member", memberSchema);
+export interface typeMember {
+  type: StringConstructor;
+  enum: typeof TYPE_MEMBER;
+}
+
+export enum TYPE_MEMBER {
+  MATCHEE = "matchee",
+  MATCHER = "matcher"
+}
+
+export interface memberGender {
+  type: typeGender[];
+  default: TYPE_GENDER[];
+}
+
+export interface memberGenderInterestedIn {
+  type: typeGender[];
+  default: TYPE_GENDER[];
+}
+
+export interface typeGender {
+  type: StringConstructor;
+  enum: typeof TYPE_GENDER;
+}
+
+export enum TYPE_GENDER {
+  MALE = "male",
+  FEMALE = "female",
+  NONBINARY = "non-binary"
+}
