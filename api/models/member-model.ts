@@ -1,10 +1,9 @@
 export interface memberModel {
   memberUsername: StringConstructor;
   memberPassword: StringConstructor;
-  memberFirstName: StringConstructor;
-  memberLastName: StringConstructor;
-  memberAge: NumberConstructor;
-  memberType: memberType;
+  memberFirstname: StringConstructor;
+  memberLastname: StringConstructor;
+  memberAge: DateConstructor;
   memberGender: memberGender;
   memberGenderInterestedIn: memberGenderInterestedIn;
   memberBio: StringConstructor;
