@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { SignUpService } from "src/services/sign-up.service";
 
 @Component({
   selector: "nga-matchee-signup",
@@ -8,7 +9,7 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 })
 export class MatcheeSignupComponent implements OnInit {
   loginForm: FormGroup;
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private signUpService: SignUpService) {}
 
   ngOnInit() {
     this.loginForm = this.fb.group({
@@ -53,5 +54,17 @@ export class MatcheeSignupComponent implements OnInit {
       genderValue,
       genderInterestValue
     );
+    this.signUpService
+      .createMember({
+        userValue,
+        passValue,
+        firstValue,
+        lastValue,
+        ageValue,
+        typeValue,
+        genderValue,
+        genderInterestValue
+      })
+      .subscribe(response => console.log(response));
   }
 }

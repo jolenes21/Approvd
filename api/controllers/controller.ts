@@ -18,8 +18,7 @@ export const createMember = (req: any, res: any) => {
     memberAge: req.body.memberAge,
     memberType: req.body.memberType,
     memberGender: req.body.memberGender,
-    memberBio: req.body.memberBio,
-    memberActve: req.body.memberActve
+    memberActive: req.body.memberActive
   });
 };
 

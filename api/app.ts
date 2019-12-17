@@ -1,16 +1,15 @@
-import express = require("express");
-import mongoose = require("mongoose");
-import morgan = require("morgan");
-import bodyParser = require("body-parser");
-
+import * as express from "express";
+import * as mongoose from "mongoose";
+import * as morgan from "morgan";
+import * as bodyParser from "body-parser";
 import { error404, error500 } from "./middleware";
 
 const app = express();
-const port = process.env.PORT || 4200;
+const port = process.env.PORT || 3000;
 const logLevel = process.env.LOG_LEVEL || "dev";
 
 //mongoose instance connection
-mongoose.Promise = global.Promise;
+require("mongoose").Promise = global.Promise;
 mongoose.connect("mongodb://localhost/approvddb", {
   useNewUrlParser: true,
   useUnifiedTopology: true

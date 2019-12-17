@@ -12,7 +12,7 @@
 <div data-role="fieldcontain" class="center">
   <label>Password</label><br />
   <input
-    type="text"
+    type="password"
     maxlength="16"
     name="password"
     formControlName="memberPassword"
@@ -37,15 +37,15 @@
   />
 </div>
 <div data-role="fieldcontain" class="center">
-  <label>Birthday</label><br />
-  <input type="date" name="birthday" formControlName="memberAge" />
+  <label>Age</label><br />
+  <input type="number" name="age" formControlName="memberAge" />
 </div>
 <div data-role="fieldcontain" class="center">
   <label>Gender</label><br />
   <select name="gender">
     <option formControlName="">Select</option>
     <option formControlName="Male">Male</option>
-    <option formControlName="Femail">Female</option>
+    <option formControlName="Female">Female</option>
     <option formControlName="Non-binary">Non-binary</option>
   </select>
   <div data-role="fieldcontain">

@@ -11,11 +11,11 @@ const memberSchema = new Schema<memberModel>({
     type: String,
     required: "A password is required to sign-up"
   },
-  memberFirstName: {
+  memberFirstname: {
     type: String,
     required: "A first name is required to sign-up"
   },
-  memberLastName: {
+  memberLastname: {
     type: String,
     required: "A last name is required to sign-up"
   },

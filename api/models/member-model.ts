@@ -1,23 +1,23 @@
 export interface memberModel {
-  memberUsername: StringConstructor;
-  memberPassword: StringConstructor;
-  memberFirstname: StringConstructor;
-  memberLastname: StringConstructor;
-  memberAge: DateConstructor;
-  memberGender: memberGender;
-  memberGenderInterestedIn: memberGenderInterestedIn;
-  memberBio: StringConstructor;
-  memberActive: BooleanConstructor;
+  memberUsername: String;
+  memberPassword: String;
+  memberFirstname: String;
+  memberLastname: String;
+  memberAge: Number;
+  memberGender: MemberGender;
+  memberGenderInterestedIn: MemberGenderInterestedIn;
+  memberBio: String;
+  memberActive: Boolean;
   required: string;
 }
 
-export interface memberType {
-  type: typeMember[];
+export interface MemberType {
+  type: TypeMember[];
   default: TYPE_MEMBER[];
 }
 
-export interface typeMember {
-  type: StringConstructor;
+export interface TypeMember {
+  type: String;
   enum: typeof TYPE_MEMBER;
 }
 
@@ -26,18 +26,18 @@ export enum TYPE_MEMBER {
   MATCHER = "matcher"
 }
 
-export interface memberGender {
-  type: typeGender[];
+export interface MemberGender {
+  type: TypeGender[];
   default: TYPE_GENDER[];
 }
 
-export interface memberGenderInterestedIn {
-  type: typeGender[];
+export interface MemberGenderInterestedIn {
+  type: TypeGender[];
   default: TYPE_GENDER[];
 }
 
-export interface typeGender {
-  type: StringConstructor;
+export interface TypeGender {
+  type: String;
   enum: typeof TYPE_GENDER;
 }
 
