@@ -15,13 +15,5 @@ export class SignUpService {
     return this.HTTP.post<MemberModel>(API_URL + "/createUser", {
       ...body
     });
-    /*     memberUsername: req.body.memberUsername,
-    memberPassword: req.body.memberPassword,
-    memberFirstname: req.body.memberFirstname,
-    memberLastname: req.body.memberLastname,
-    memberAge: req.body.memberAge,
-    memberType: req.body.memberType,
-    memberGender: req.body.memberGender,
-    memberActive: req.body.memberActive */
   }
 }
