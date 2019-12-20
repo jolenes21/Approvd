@@ -1,5 +1,7 @@
+//import express = require("express");
 import * as express from "express";
 import * as mongoose from "mongoose";
+//import morgan = require("morgan");
 import * as morgan from "morgan";
 import * as bodyParser from "body-parser";
 import { error404, error500 } from "./middleware";

@@ -1,4 +1,4 @@
-export interface memberModel {
+export interface MemberModel {
   memberUsername: String;
   memberPassword: String;
   memberFirstname: String;

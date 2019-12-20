@@ -1,8 +1,8 @@
 import { Schema, model } from "mongoose";
-import { memberModel, TYPE_MEMBER, TYPE_GENDER } from "./member-model";
+import { MemberModel, TYPE_MEMBER, TYPE_GENDER } from "./member-model";
 
 //Member
-const memberSchema = new Schema<memberModel>({
+const memberSchema = new Schema<MemberModel>({
   memberUsername: {
     type: String,
     required: "A username is required to sign-up"

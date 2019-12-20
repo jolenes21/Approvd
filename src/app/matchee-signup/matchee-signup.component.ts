@@ -9,7 +9,7 @@ import { SignUpService } from "src/services/sign-up.service";
 })
 export class MatcheeSignupComponent implements OnInit {
   loginForm: FormGroup;
-  constructor(private fb: FormBuilder, private signUpService: SignUpService) {}
+  constructor(private fb: FormBuilder, public signUpService: SignUpService) {}
 
   ngOnInit() {
     this.loginForm = this.fb.group({

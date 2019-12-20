@@ -1,16 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { MatcheeSignupComponent } from './matchee-signup.component';
+import { MatcheeSignupComponent } from "./matchee-signup.component";
 
-describe('SignupComponent', () => {
+describe("SignupComponent", () => {
   let component: MatcheeSignupComponent;
   let fixture: ComponentFixture<MatcheeSignupComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MatcheeSignupComponent ]
-    })
-    .compileComponents();
+      declarations: [MatcheeSignupComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,11 @@ describe('SignupComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
+  });
+
+  it("form data should equal submission data", () => {
+    expect(component.loginForm).toEqual(component.signUpService);
   });
 });
