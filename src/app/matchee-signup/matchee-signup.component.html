@@ -1,5 +1,5 @@
 <h2>Matchee Sign Up</h2>
-<div data-role="fieldcontain" class="center">
+<div data-role="fieldcontain" class="center" formGroup="loginForm">
   <label>Username</label><br />
   <input
     type="text"
@@ -9,7 +9,7 @@
     onBlur="checkUser(this)"
   />
 </div>
-<div data-role="fieldcontain" class="center">
+<div data-role="fieldcontain" class="center" formGroup="loginForm">
   <label>Password</label><br />
   <input
     type="password"
@@ -18,7 +18,7 @@
     formControlName="memberPassword"
   />
 </div>
-<div data-role="fieldcontain" class="center">
+<div data-role="fieldcontain" class="center" formGroup="loginForm">
   <label>First Name</label><br />
   <input
     type="text"
@@ -27,7 +27,7 @@
     formControlName="memberFirstname"
   />
 </div>
-<div data-role="fieldcontain" class="center">
+<div data-role="fieldcontain" class="center" formGroup="loginForm">
   <label>Last Name</label><br />
   <input
     type="text"
@@ -36,11 +36,11 @@
     formControlName="memberLastname"
   />
 </div>
-<div data-role="fieldcontain" class="center">
+<div data-role="fieldcontain" class="center" formGroup="loginForm">
   <label>Age</label><br />
   <input type="number" name="age" formControlName="memberAge" />
 </div>
-<div data-role="fieldcontain" class="center">
+<div data-role="fieldcontain" class="center" formGroup="loginForm">
   <label>Gender</label><br />
   <select name="gender">
     <option formControlName="">Select</option>
@@ -48,25 +48,25 @@
     <option formControlName="Female">Female</option>
     <option formControlName="Non-binary">Non-binary</option>
   </select>
-  <div data-role="fieldcontain">
-    <label>Gender Interested In</label><br />
-    <select name="genderInterest">
-      <option formControlName="">Select</option>
-      <option formControlName="Male">Male</option>
-      <option formControlName="Female">Female</option>
-      <option formControlName="Non-binary">Non-binary</option>
-    </select>
-    <div data-role="fieldcontain">
-      <label></label><br />
-      <input
-        (click)="doSubmit()"
-        data-transition="slide"
-        type="submit"
-        name="submit"
-        value="Sign Up"
-        [routerLink]="['/home']"
-        routerLinkActive="router-link-active"
-      />
-    </div>
-  </div>
+</div>
+<div data-role="fieldcontain" class="center" formGroup="loginForm">
+  <label>Gender Interested In</label><br />
+  <select name="genderInterest">
+    <option formControlName="">Select</option>
+    <option formControlName="Male">Male</option>
+    <option formControlName="Female">Female</option>
+    <option formControlName="Non-binary">Non-binary</option>
+  </select>
+</div>
+<div data-role="fieldcontain" class="center" formGroup="loginForm">
+  <label></label><br />
+  <input
+    (click)="doSubmit()"
+    data-transition="slide"
+    type="submit"
+    name="submit"
+    value="Sign Up"
+    [routerLink]="['/home']"
+    routerLinkActive="router-link-active"
+  />
 </div>
